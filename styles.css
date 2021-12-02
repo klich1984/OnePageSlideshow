@@ -111,9 +111,8 @@ h2 {
 }
 
 .slide-container {
-	width: 100%;
 	width: 80%;
-	height: inherit;
+	height: 80%;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
