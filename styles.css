@@ -1,3 +1,9 @@
+:root {
+	--font: 'Raleway', sans-serif;
+}
+
+/* Reset */
+
 html {
 	box-sizing: border-box;
 	font-family: sans-serif;
@@ -14,6 +20,31 @@ html {
 body {
 	margin: 0;
 }
+
+h1 {
+	margin: 0;
+}
+
+h2 {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+
+/* Button */
+.btn {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #F05454;
+}
+
+/* Slides */
 
 .slides {
 	width: 100%;
@@ -42,6 +73,129 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-size: 3vw;
 	color: #d9e8f0;
 }
+
+/* Cover page */
+.container-cover-page {
+	width: 100%;
+	height: 80%;
+	background-image: url(./images/hero-image.jpg);
+	background-position: bottom left;
+	animation: movement 10s infinite 3s linear alternate;
+}
+
+/* Trancition */
+@keyframes movement {
+	from {
+		background-position: bottom left;
+	}
+	to {
+		background-position: top right;
+	}
+}
+
+/* Gradient */
+.gradient {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: -webkit-linear-gradient(
+		left,
+		rgba(34, 40, 49, 0.4),
+		rgba(175, 28, 28, 0.4)
+	);
+}
+
+.container-details {
+	width: 100%;
+	min-width: 320px;
+}
+
+.hero-image-title {
+	font-size: 5.5vw;
+	color: #fff;
+}
+
+.details {
+	position: relative;
+	z-index: 100;
+}
+
+
+/* Text animation */
+.text {
+  position: absolute;
+  width: 450px;
+  left: 50%;
+  margin-left: -225px;
+  height: 40px;
+  top: 50%;
+  margin-top: -3.5rem;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+	font-size: 2rem;
+}
+
+.word {
+  position: absolute;
+	left: 2.5rem;
+	font-size: 3vw;
+  width: 300px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: center;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+	font-weight: 700;
+}
+
+.belize {
+  color: #2980b9;
+	font-weight: 700;
+}
+
+.pomegranate {
+  color: #c0392b;
+	font-weight: 700;
+}
+
+.green {
+  color: #16a085;
+	font-weight: 700;
+}
+
+.midnight {
+  color: #fff700;
+	font-weight: 700;
+}
+
