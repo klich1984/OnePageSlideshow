@@ -2,4 +2,5 @@
 
 Small presentation with effects in slide mode
 
-[see site by clicking here 🖱️](https://klich1984.github.io/OnePageSlideshow/)
+<a href="https://klich1984.github.io/OnePageSlideshow/" target="_blank" rel="noopener">See site by clicking here 🖱️</a>
+
